@@ -72,7 +72,7 @@ GameObject:
   m_Component:
   - component: {fileID: 90417694871560839}
   m_Layer: 0
-  m_Name: PLATFORM_CHAIR_FINSIHED
+  m_Name: RM_CHAIR_2ndpass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

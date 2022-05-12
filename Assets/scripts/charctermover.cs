@@ -6,7 +6,7 @@ public class charctermover : MonoBehaviour
 {
     [SerializeField]
     public float moveSpeed = 4f;
-    
+
 
     Vector3 forward, right;
 
@@ -46,13 +46,18 @@ public class charctermover : MonoBehaviour
 
     void Move()
     {
-
+        
         // Movement speed
-        Vector3 rightMovement = right * moveSpeed * Input.GetAxis("Horizontal");
-        Vector3 upMovement = forward * moveSpeed * Input.GetAxis("Vertical");
+        Vector3 rightMovement = right * moveSpeed * Input.GetAxisRaw("Horizontal");
+        Vector3 upMovement = forward * moveSpeed * Input.GetAxisRaw("Vertical");
+        float HAX = Input.GetAxisRaw("Horizontal");
+        float VAX = Input.GetAxisRaw("Vertical");
+        Debug.Log("Hax: " + HAX + " VAX: " + VAX);
 
         // Calculate what is forward
         Vector3 heading = Vector3.Normalize(rightMovement + upMovement);
+
+        //Debug.Log("RM: " + rightMovement + "UM: " + upMovement);
 
         // Set new position
         Vector3 newPosition = transform.position;
@@ -62,6 +67,10 @@ public class charctermover : MonoBehaviour
         // Smoothly move the new position
         transform.forward = heading;
         transform.position = Vector3.Lerp(transform.position, newPosition, Time.deltaTime);
+        
+        rightMovement = Vector3.zero;
+        upMovement = Vector3.zero;
+
 
     }
 

@@ -7,15 +7,16 @@ public class menu : MonoBehaviour
     public Canvas MainCanvas;
     public Canvas Howto;
 
-        private void Awake()
+    private void Awake()
     {
         Howto.enabled = false;
     }
-	public void HowtoON()
-{
+    
+    public void HowtoON()
+    {
         Howto.enabled = true;
         MainCanvas.enabled = false;
-}
+    }
 
     public void ReturnOn()
     {
@@ -26,6 +27,11 @@ public class menu : MonoBehaviour
     public void LoadOn()
     {
         SceneManager.LoadScene(1);
+    }
+
+    public void Exit()
+    {
+        Application.Quit();
     }
 }
 

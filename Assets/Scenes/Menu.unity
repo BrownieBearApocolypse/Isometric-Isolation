@@ -1049,7 +1049,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MainCanvas: {fileID: 1670705077}
-  Howto: {fileID: 0}
+  Howto: {fileID: 1557068573}
 --- !u!1 &1658631126
 GameObject:
   m_ObjectHideFlags: 0

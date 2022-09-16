@@ -11,9 +11,9 @@ public class charctermover : MonoBehaviour
 
     Vector3 forward, right;
 
-    bool jump = false;
-    public float jumpHeight = 8f;
-    public float jumpSpeed = 10f;
+    //bool jump = false;
+   // public float jumpHeight = 8f;
+    //public float jumpSpeed = 10f;
     Rigidbody rb;
 
     // Use this for initialization
@@ -33,9 +33,9 @@ public class charctermover : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Jump") && !jump)
+        if (Input.GetButtonDown("Jump"))
         {
-            StartCoroutine(Jump());
+            Jump();
         }
 
         else
@@ -79,23 +79,9 @@ public class charctermover : MonoBehaviour
 
     }
 
-    IEnumerator Jump()
+    void Jump()
     {
-        float originalHeight = transform.position.y;
-
-        jump = true;
-        yield return null;
-
-        rb.AddForce(Vector3.up * jumpHeight, ForceMode.Impulse);
-
-        while (transform.position.y > originalHeight)
-        {
-            yield return null;
-        }
-
-        jump = false;
-
-        yield return null;
 
     }
+    
 }

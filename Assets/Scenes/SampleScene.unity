@@ -56706,6 +56706,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Little_Lad_flower 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6868344064457880796, guid: 75d2d41ecfed5a24aba8b16037f3bab7, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75d2d41ecfed5a24aba8b16037f3bab7, type: 3}
 --- !u!1001 &8943888291976109695

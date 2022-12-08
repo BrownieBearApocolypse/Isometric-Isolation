@@ -56654,6 +56654,10 @@ PrefabInstance:
       propertyPath: m_groundMask.m_Bits
       value: 64
       objectReference: {fileID: 0}
+    - target: {fileID: 4922925846152549641, guid: 75d2d41ecfed5a24aba8b16037f3bab7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c7decf9b30e15e94e9ceed6602cf4d11, type: 2}
     - target: {fileID: 6060316939540819558, guid: 75d2d41ecfed5a24aba8b16037f3bab7, type: 3}
       propertyPath: m_RootOrder
       value: 1

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5944397520195014760}
   - component: {fileID: 7336756977996980173}
   - component: {fileID: 4770880804180994823}
+  - component: {fileID: 6686676548790791022}
   m_Layer: 0
   m_Name: VASE_PURPLE
   m_TagString: Untagged
@@ -25,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6428165678097730258}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -8.167352, y: 0.82609814, z: 17.800005}
   m_LocalScale: {x: 25, y: 50, z: 25}
   m_Children: []
@@ -81,3 +82,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6686676548790791022
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6428165678097730258}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03608338, y: 0.04028566, z: 0.03742995}
+  m_Center: {x: 0.00000023841858, y: 0.00039765157, z: 0.00000023841858}

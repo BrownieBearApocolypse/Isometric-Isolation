@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class DoorLock : MonoBehaviour
 {
-    public int LockCount;
-    public int UnlockedCount;
+    public int LockCount = 1;
+    public int UnlockedCount = 0;
 
     public bool Lock;
     public GameObject teleport2;
@@ -30,7 +30,11 @@ public class DoorLock : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         if (Lock == false)
+        {
             player.transform.position = teleport2.transform.position;
+            Debug.Log("fuck it works");
+        }
+          
     }
 
 }

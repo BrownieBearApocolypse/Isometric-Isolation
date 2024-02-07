@@ -27,7 +27,7 @@ public class DoorLock : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter(Collider other)
     {
         if (Lock == false)
         {

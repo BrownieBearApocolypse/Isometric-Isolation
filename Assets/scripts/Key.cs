@@ -21,6 +21,7 @@ public class Key : MonoBehaviour
             gotKey = true;
             ButtonToEnable.GetComponent<BoxCollider>().enabled = true;
             //Lockcheck takes place at button.
+            Debug.Log("Keyhas");
 
             Destroy(gameObject);
         }

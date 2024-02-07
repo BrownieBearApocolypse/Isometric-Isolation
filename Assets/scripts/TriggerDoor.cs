@@ -13,13 +13,14 @@ public class TriggerDoor : MonoBehaviour
         Triggered = false;
     }
 
-    private void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter(Collider other)
     {
         if (Triggered == false && other.gameObject.tag == "Player")
         {
             Triggered = true;
             Door.GetComponent<DoorLock>().UnlockedCount++;
             Door.GetComponent<DoorLock>().LockCheck();
+            Debug.Log("we ballin");
         }
     }
 

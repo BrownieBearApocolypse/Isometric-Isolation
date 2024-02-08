@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Key : MonoBehaviour
 {
     public GameObject ButtonToEnable;
     public bool gotKey = false;
+    public Toggle myToggle;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +24,7 @@ public class Key : MonoBehaviour
             ButtonToEnable.GetComponent<BoxCollider>().enabled = true;
             //Lockcheck takes place at button.
             Debug.Log("Keyhas");
-
+            myToggle.isOn = true;
             Destroy(gameObject);
         }
     }
